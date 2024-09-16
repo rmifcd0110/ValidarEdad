@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function(){
     // Función para validar la edad ingresada
     function validateAge(age){
         //Verificar que la edad sea un número entero mayor o igual a 0
-        if (isNaN(age) || age < 0){
+        if (isNaN(age) || age < 1 || age > 95){
             return false;
         }
         return true;
